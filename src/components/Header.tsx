@@ -93,7 +93,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img
-              src="/src/images/LazzyBear-Logo.png"
+              src="/images/LazzyBear-Logo.png"
               alt="LazzyBear Logo"
               className="w-10 h-10 object-contain rounded-lg shadow"
             />
