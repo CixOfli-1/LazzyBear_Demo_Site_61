@@ -1,20 +1,13 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tours from "./pages/Tours";
 import MedicalTourismPackages from "./pages/tours/MedicalTourismPackages";
-import DentalTourism from "./pages/tours/medical-tourism/DentalTourism";
-import HairTransplantationTourism from "./pages/tours/medical-tourism/HairTransplantationTourism";
-import EyeSurgeryTourism from "./pages/tours/medical-tourism/EyeSurgeryTourism";
-import AestheticCosmeticSurgeryTourism from "./pages/tours/medical-tourism/AestheticCosmeticSurgeryTourism";
-import WellnessSpRetreats from "./pages/tours/medical-tourism/WellnessSpRetreats";
-import RehabilitationRecoveryPrograms from "./pages/tours/medical-tourism/RehabilitationRecoveryPrograms";
 import CulturalLeisureTours from "./pages/tours/CulturalLeisureTours";
 import HistoricalCityTours from "./pages/tours/cultural-leisure/HistoricalCityTours";
 import AdventureTours from "./pages/tours/cultural-leisure/AdventureTours";
@@ -46,6 +39,30 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
+import Coffee from "./pages/export-import/Coffee";
+import MezcalTequila from "./pages/export-import/MezcalTequila";
+import Cereals from "./pages/export-import/Cereals";
+import Textile from "./pages/export-import/Textile";
+import Beaches from "./pages/tours/Beaches";
+import Mountains from "./pages/tours/Mountains";
+import Volcanoes from "./pages/tours/Volcanoes";
+import Fishing from "./pages/tours/Fishing";
+import Oludeniz from './pages/tours/beaches/Oludeniz';
+import Kaputas from './pages/tours/beaches/Kaputas';
+import Iztuzu from './pages/tours/beaches/Iztuzu';
+import Ararat from './pages/tours/mountains/Ararat';
+import Erciyes from './pages/tours/mountains/Erciyes';
+import Kackar from './pages/tours/mountains/Kackar';
+import Nemrut from './pages/tours/volcanoes/Nemrut';
+import ErciyesVolcano from './pages/tours/volcanoes/Erciyes';
+import Hasan from './pages/tours/volcanoes/Hasan';
+import Bodrum from './pages/tours/fishing/Bodrum';
+import Cesme from './pages/tours/fishing/Cesme';
+import Gocek from './pages/tours/fishing/Gocek';
+import Cultural from './pages/tours/Cultural';
+import CulturalEphesus from './pages/tours/cultural/EphesusAncientCity';
+import CulturalGobekliTepe from './pages/tours/cultural/GobekliTepe';
+import CulturalTopkapiPalace from './pages/tours/cultural/TopkapiPalace';
 
 const queryClient = new QueryClient();
 
@@ -60,14 +77,12 @@ const App = () => (
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/tours" element={<Tours />} />
+              <Route path="/tours" element={<Navigate to="/tours/beaches" replace />} />
+              <Route path="/tours/beaches" element={<Beaches />} />
+              <Route path="/tours/mountains" element={<Mountains />} />
+              <Route path="/tours/volcanoes" element={<Volcanoes />} />
+              <Route path="/tours/fishing" element={<Fishing />} />
               <Route path="/tours/medical-tourism-packages" element={<MedicalTourismPackages />} />
-              <Route path="/tours/medical-tourism-packages/dental-tourism" element={<DentalTourism />} />
-              <Route path="/tours/medical-tourism-packages/hair-transplantation-tourism" element={<HairTransplantationTourism />} />
-              <Route path="/tours/medical-tourism-packages/eye-surgery-tourism" element={<EyeSurgeryTourism />} />
-              <Route path="/tours/medical-tourism-packages/aesthetic-cosmetic-surgery-tourism" element={<AestheticCosmeticSurgeryTourism />} />
-              <Route path="/tours/medical-tourism-packages/wellness-spa-retreats" element={<WellnessSpRetreats />} />
-              <Route path="/tours/medical-tourism-packages/rehabilitation-recovery-programs" element={<RehabilitationRecoveryPrograms />} />
               <Route path="/tours/cultural-leisure-tours" element={<CulturalLeisureTours />} />
               <Route path="/tours/cultural-leisure-tours/historical-city-tours" element={<HistoricalCityTours />} />
               <Route path="/tours/cultural-leisure-tours/adventure-tours" element={<AdventureTours />} />
@@ -95,9 +110,29 @@ const App = () => (
               <Route path="/export-import/health-product-sourcing" element={<HealthProductSourcing />} />
               <Route path="/export-import/logistics-supply-chain-solutions" element={<LogisticsSupplyChainSolutions />} />
               <Route path="/export-import/partnership-opportunities" element={<PartnershipOpportunities />} />
+              <Route path="/export-import/coffee" element={<Coffee />} />
+              <Route path="/export-import/mezcal-tequila" element={<MezcalTequila />} />
+              <Route path="/export-import/cereals" element={<Cereals />} />
+              <Route path="/export-import/textile" element={<Textile />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/tours/beaches/oludeniz" element={<Oludeniz />} />
+              <Route path="/tours/beaches/kaputas" element={<Kaputas />} />
+              <Route path="/tours/beaches/iztuzu" element={<Iztuzu />} />
+              <Route path="/tours/mountains/ararat" element={<Ararat />} />
+              <Route path="/tours/mountains/erciyes" element={<Erciyes />} />
+              <Route path="/tours/mountains/kackar" element={<Kackar />} />
+              <Route path="/tours/volcanoes/nemrut" element={<Nemrut />} />
+              <Route path="/tours/volcanoes/erciyes" element={<ErciyesVolcano />} />
+              <Route path="/tours/volcanoes/hasan" element={<Hasan />} />
+              <Route path="/tours/fishing/bodrum" element={<Bodrum />} />
+              <Route path="/tours/fishing/cesme" element={<Cesme />} />
+              <Route path="/tours/fishing/gocek" element={<Gocek />} />
+              <Route path="/tours/cultural" element={<Cultural />} />
+              <Route path="/tours/cultural/ephesus-ancient-city" element={<CulturalEphesus />} />
+              <Route path="/tours/cultural/gobekli-tepe" element={<CulturalGobekliTepe />} />
+              <Route path="/tours/cultural/topkapi-palace" element={<CulturalTopkapiPalace />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

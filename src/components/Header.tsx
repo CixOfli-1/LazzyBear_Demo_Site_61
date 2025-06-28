@@ -16,37 +16,11 @@ const Header = () => {
       name: 'Tours',
       path: '/tours',
       children: [
-        {
-          name: 'Medical Tourism Packages',
-          path: '/tours/medical-tourism-packages',
-          children: [
-            { name: 'Dental Tourism', path: '/tours/medical-tourism-packages/dental-tourism' },
-            { name: 'Hair Transplantation Tourism', path: '/tours/medical-tourism-packages/hair-transplantation-tourism' },
-            { name: 'Eye Surgery Tourism', path: '/tours/medical-tourism-packages/eye-surgery-tourism' },
-            { name: 'Aesthetic & Cosmetic Surgery Tourism', path: '/tours/medical-tourism-packages/aesthetic-cosmetic-surgery-tourism' },
-            { name: 'Wellness & Spa Retreats', path: '/tours/medical-tourism-packages/wellness-spa-retreats' },
-            { name: 'Rehabilitation & Recovery Programs', path: '/tours/medical-tourism-packages/rehabilitation-recovery-programs' },
-          ]
-        },
-        {
-          name: 'Cultural & Leisure Tours',
-          path: '/tours/cultural-leisure-tours',
-          children: [
-            { name: 'Historical City Tours', path: '/tours/cultural-leisure-tours/historical-city-tours' },
-            { name: 'Adventure Tours', path: '/tours/cultural-leisure-tours/adventure-tours' },
-            { name: 'Nature & Ecotourism', path: '/tours/cultural-leisure-tours/nature-ecotourism' },
-            { name: 'Customized Tour Packages', path: '/tours/cultural-leisure-tours/customized-tour-packages' },
-          ]
-        },
-        {
-          name: 'Popular Destinations',
-          path: '/tours/popular-destinations',
-          children: [
-            { name: 'Istanbul Tours', path: '/tours/popular-destinations/istanbul-tours' },
-            { name: 'Cappadocia Tours', path: '/tours/popular-destinations/cappadocia-tours' },
-            { name: 'Antalya Tours', path: '/tours/popular-destinations/antalya-tours' },
-          ]
-        }
+        { name: 'Beaches', path: '/tours/beaches' },
+        { name: 'Mountains', path: '/tours/mountains' },
+        { name: 'Volcanoes', path: '/tours/volcanoes' },
+        { name: 'Fishing', path: '/tours/fishing' },
+        { name: 'Cultural', path: '/tours/cultural' },
       ]
     },
     {
@@ -75,11 +49,10 @@ const Header = () => {
       name: 'Export/Import',
       path: '/export-import',
       children: [
-        { name: 'Medical Equipment Export', path: '/export-import/medical-equipment-export' },
-        { name: 'Pharmaceutical Export/Import', path: '/export-import/pharmaceutical-export-import' },
-        { name: 'Health Product Sourcing', path: '/export-import/health-product-sourcing' },
-        { name: 'Logistics & Supply Chain Solutions', path: '/export-import/logistics-supply-chain-solutions' },
-        { name: 'Partnership Opportunities', path: '/export-import/partnership-opportunities' },
+        { name: 'Coffee', path: '/export-import/coffee' },
+        { name: 'Mezcal & Tequila', path: '/export-import/mezcal-tequila' },
+        { name: 'Cereals', path: '/export-import/cereals' },
+        { name: 'Textile', path: '/export-import/textile' },
       ]
     },
     { name: 'About Us', path: '/about-us' },

@@ -7,16 +7,10 @@ import { ArrowRight, Shield, Heart, Globe, Users, Award, Clock } from 'lucide-re
 const Home = () => {
   const services = [
     {
-      icon: <Heart className="w-8 h-8 text-red-500" />,
-      title: "Medical Tourism",
-      description: "World-class healthcare combined with exceptional travel experiences.",
-      link: "/tours/medical-tourism-packages"
-    },
-    {
       icon: <Globe className="w-8 h-8 text-blue-500" />,
       title: "Cultural Tours",
       description: "Discover Turkey's rich history and vibrant culture through our guided tours.",
-      link: "/tours/cultural-leisure-tours"
+      link: "/tours/cultural"
     },
     {
       icon: <Shield className="w-8 h-8 text-green-500" />,
@@ -78,7 +72,7 @@ const Home = () => {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-turquoise text-turquoise hover:bg-turquoise hover:text-white">
-              <Link to="/tours/cultural-leisure-tours">
+              <Link to="/tours/cultural">
                 Discover Cultural Tours
               </Link>
             </Button>
@@ -99,7 +93,7 @@ const Home = () => {
               we offer a complete range of services tailored to your needs.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center">
             {services.map((service, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow bg-white/80 border-2 border-pastelPink">
                 <CardHeader>
