@@ -1,11 +1,14 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Heart, Users, Award, Globe, ArrowRight, Shield } from 'lucide-react';
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const values = [
     {
       icon: <Heart className="w-8 h-8 text-red-500" />,
@@ -266,7 +269,7 @@ const AboutUs = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+            <Button asChild size="lg" className="bg-pastelPink text-white border-pastelPink hover:bg-white hover:text-pastelPink">
               <Link to="/medical-services/patient-testimonials">Read Patient Stories</Link>
             </Button>
           </div>

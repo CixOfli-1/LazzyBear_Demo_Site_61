@@ -25,7 +25,7 @@ const Oludeniz = () => {
       <div className="relative h-64 md:h-80 w-full flex items-center justify-center" style={{ backgroundImage: 'url(/images/beaches-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Ölüdeniz Beach</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 uppercase">ÖLÜDENİZ BEACH</h1>
           <div className="text-lg">Fethiye, Muğla</div>
         </div>
       </div>

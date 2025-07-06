@@ -28,21 +28,61 @@ const Header = () => {
       path: '/medical-services',
       children: [
         {
-          name: 'Specialized Treatments',
-          path: '/medical-services/specialized-treatments',
+          name: 'Hair Transplant',
+          path: '/medical-services/hair-transplant',
           children: [
-            { name: 'Oncology', path: '/medical-services/specialized-treatments/oncology' },
-            { name: 'Cardiology', path: '/medical-services/specialized-treatments/cardiology' },
-            { name: 'Orthopedics', path: '/medical-services/specialized-treatments/orthopedics' },
-            { name: 'Neurology', path: '/medical-services/specialized-treatments/neurology' },
-            { name: 'Fertility Treatments', path: '/medical-services/specialized-treatments/fertility-treatments' },
-            { name: 'Check-up Programs', path: '/medical-services/specialized-treatments/check-up-programs' },
+            { name: 'Stem Cell Hair Transplant In Turkey', path: '/medical-services/hair-transplant/stem-cell-hair-transplant' },
+            { name: 'Sapphire Fue Hair Transplant', path: '/medical-services/hair-transplant/sapphire-fue-hair-transplant' },
+            { name: 'Fue Hair Transplant', path: '/medical-services/hair-transplant/fue-hair-transplant' },
+            { name: 'Direct Hair Implant', path: '/medical-services/hair-transplant/direct-hair-implant' },
+            { name: 'Unshaven Hair Transplant', path: '/medical-services/hair-transplant/unshaven-hair-transplant' },
+            { name: 'Female Hair Transplant', path: '/medical-services/hair-transplant/female-hair-transplant' },
+            { name: 'Eyebrow Transplant', path: '/medical-services/hair-transplant/eyebrow-transplant' },
+            { name: 'Beard Transplant', path: '/medical-services/hair-transplant/beard-transplant' },
+            { name: 'Hair Graft Calculator', path: '/medical-services/hair-transplant/hair-graft-calculator' },
+            { name: 'Ozone Therapy for Hair', path: '/medical-services/hair-transplant/ozone-therapy-for-hair' },
           ]
         },
-        { name: 'Our Partner Hospitals & Clinics', path: '/medical-services/our-partners' },
-        { name: 'Medical Second Opinion', path: '/medical-services/medical-second-opinion' },
+        {
+          name: 'Dental Treatment',
+          path: '/medical-services/dental-treatment',
+          children: [
+            { name: 'Dental Implants', path: '/medical-services/dental-treatment/dental-implants' },
+            { name: 'Dental Laser', path: '/medical-services/dental-treatment/dental-laser' },
+            { name: 'Hollywood Smile', path: '/medical-services/dental-treatment/hollywood-smile' },
+            { name: 'Teeth Whitening', path: '/medical-services/dental-treatment/teeth-whitening' },
+            { name: 'Endodontic', path: '/medical-services/dental-treatment/endodontic' },
+            { name: 'Zirconium', path: '/medical-services/dental-treatment/zirconium' },
+            { name: 'Periodontology', path: '/medical-services/dental-treatment/periodontology' },
+            { name: 'Orthodontics', path: '/medical-services/dental-treatment/orthodontics' },
+          ]
+        },
+        {
+          name: 'Plastic Surgery',
+          path: '/medical-services/plastic-surgery',
+          children: [
+            { name: 'Tummy Tuck (Abdominoplasty)', path: '/medical-services/plastic-surgery/tummy-tuck' },
+            { name: 'Liposuction', path: '/medical-services/plastic-surgery/liposuction' },
+            { name: 'Rhinoplasty (Nose Job)', path: '/medical-services/plastic-surgery/rhinoplasty' },
+            { name: 'Breast Augmentation', path: '/medical-services/plastic-surgery/breast-augmentation' },
+            { name: 'Breast Lift', path: '/medical-services/plastic-surgery/breast-lift' },
+            { name: 'Facelift', path: '/medical-services/plastic-surgery/facelift' },
+            { name: 'Otoplasty (Ear Surgery)', path: '/medical-services/plastic-surgery/otoplasty' },
+            { name: 'Lip Augmentation', path: '/medical-services/plastic-surgery/lip-augmentation' },
+          ]
+        },
+        {
+          name: 'Eye Surgery',
+          path: '/medical-services/eye-surgery',
+          children: [
+            { name: 'Femto Lasik Laser', path: '/medical-services/eye-surgery/femto-lasik-laser' },
+            { name: 'Refractive Surgery', path: '/medical-services/eye-surgery/refractive-surgery' },
+            { name: 'Smile Laser', path: '/medical-services/eye-surgery/smile-laser' },
+            { name: 'Trifocal Lens', path: '/medical-services/eye-surgery/trifocal-lens' },
+          ]
+        },
         { name: 'Before & After Care', path: '/medical-services/before-after-care' },
-        { name: 'Patient Testimonials', path: '/medical-services/patient-testimonials' },
+        { name: 'Our Partner Hospitals & Clinics', path: '/medical-services/our-partners' },
       ]
     },
     {

@@ -45,12 +45,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/tours" className="text-gray-300 hover:text-white transition-colors">Tours</Link></li>
-              <li><Link to="/medical-services" className="text-gray-300 hover:text-white transition-colors">Medical Services</Link></li>
-              <li><Link to="/export-import" className="text-gray-300 hover:text-white transition-colors">Export/Import</Link></li>
               <li><Link to="/about-us" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/contact-us" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link to="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link to="/medical-services" className="text-gray-300 hover:text-white transition-colors">Medical Services</Link></li>
+              <li><Link to="/tours" className="text-gray-300 hover:text-white transition-colors">Tours</Link></li>
+              <li><Link to="/export-import" className="text-gray-300 hover:text-white transition-colors">Export/Import</Link></li>
             </ul>
           </div>
 
@@ -58,12 +58,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Medical Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/tours/medical-tourism-packages/dental-tourism" className="text-gray-300 hover:text-white transition-colors">Dental Tourism</Link></li>
-              <li><Link to="/tours/medical-tourism-packages/hair-transplantation-tourism" className="text-gray-300 hover:text-white transition-colors">Hair Transplantation</Link></li>
-              <li><Link to="/tours/medical-tourism-packages/aesthetic-cosmetic-surgery-tourism" className="text-gray-300 hover:text-white transition-colors">Aesthetic Surgery</Link></li>
-              <li><Link to="/medical-services/specialized-treatments/oncology" className="text-gray-300 hover:text-white transition-colors">Oncology</Link></li>
-              <li><Link to="/medical-services/specialized-treatments/cardiology" className="text-gray-300 hover:text-white transition-colors">Cardiology</Link></li>
-              <li><Link to="/medical-services/patient-testimonials" className="text-gray-300 hover:text-white transition-colors">Patient Stories</Link></li>
+              <li><Link to="/medical-services/hair-transplant" className="text-gray-300 hover:text-white transition-colors">Hair Transplant</Link></li>
+              <li><Link to="/medical-services/dental-treatment" className="text-gray-300 hover:text-white transition-colors">Dental Treatment</Link></li>
+              <li><Link to="/medical-services/plastic-surgery" className="text-gray-300 hover:text-white transition-colors">Plastic Surgery</Link></li>
+              <li><Link to="/medical-services/eye-surgery" className="text-gray-300 hover:text-white transition-colors">Eye Surgery</Link></li>
+              <li><Link to="/medical-services/before-after-care" className="text-gray-300 hover:text-white transition-colors">Before & After Care</Link></li>
+              <li><Link to="/medical-services/our-partners" className="text-gray-300 hover:text-white transition-colors">Our Partner Hospitals & Clinics</Link></li>
             </ul>
           </div>
 
@@ -71,12 +71,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Popular Destinations</h3>
             <ul className="space-y-2">
-              <li><Link to="/tours/popular-destinations/istanbul-tours" className="text-gray-300 hover:text-white transition-colors">Istanbul Tours</Link></li>
-              <li><Link to="/tours/popular-destinations/cappadocia-tours" className="text-gray-300 hover:text-white transition-colors">Cappadocia Tours</Link></li>
-              <li><Link to="/tours/popular-destinations/antalya-tours" className="text-gray-300 hover:text-white transition-colors">Antalya Tours</Link></li>
-              <li><Link to="/tours/cultural-leisure-tours/historical-city-tours" className="text-gray-300 hover:text-white transition-colors">Historical Tours</Link></li>
-              <li><Link to="/tours/cultural-leisure-tours/adventure-tours" className="text-gray-300 hover:text-white transition-colors">Adventure Tours</Link></li>
-              <li><Link to="/tours/medical-tourism-packages/wellness-spa-retreats" className="text-gray-300 hover:text-white transition-colors">Wellness Retreats</Link></li>
+              <li><Link to="/tours/beaches" className="text-gray-300 hover:text-white transition-colors">Beaches</Link></li>
+              <li><Link to="/tours/mountains" className="text-gray-300 hover:text-white transition-colors">Mountains</Link></li>
+              <li><Link to="/tours/volcanoes" className="text-gray-300 hover:text-white transition-colors">Volcanoes</Link></li>
+              <li><Link to="/tours/cultural" className="text-gray-300 hover:text-white transition-colors">Cultural Tours</Link></li>
+              <li><Link to="/tours/fishing" className="text-gray-300 hover:text-white transition-colors">Fishing Tours</Link></li>
             </ul>
           </div>
         </div>

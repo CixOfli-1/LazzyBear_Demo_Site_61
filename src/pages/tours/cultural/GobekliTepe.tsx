@@ -25,7 +25,7 @@ const GobekliTepe = () => {
       <div className="relative h-64 md:h-80 w-full flex items-center justify-center" style={{ backgroundImage: 'url(/images/Cultural-herobanner.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="relative z-10 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Göbekli Tepe</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2 uppercase">GÖBEKLİ TEPE</h1>
           <div className="text-lg">Şanlıurfa</div>
         </div>
       </div>
